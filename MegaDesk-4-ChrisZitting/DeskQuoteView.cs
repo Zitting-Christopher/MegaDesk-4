@@ -20,7 +20,7 @@ namespace MegaDesk_3_ChrisZitting
             DeskWidth.Text = width.ToString() + " inches";
             DeskDepth.Text = depth.ToString() + " inches";
             Drawers.Text = numOfDrawers.ToString();
-            Material.Text = desktopMaterial;
+            Material.Text = DesktopMaterial;
 
             if (rushOrderDays == 0)
             {

@@ -59,9 +59,9 @@ namespace MegaDesk_3_ChrisZitting
 
         public double SurfaceMaterialCost()
         {
-            //Desk.Material result;
-            //if Desk.Material.TryParse()
-            //switch (result)
+            Desk.Material result;
+            if Desk.Material.TryParse()
+            switch (result)
             return 1;
 
         }

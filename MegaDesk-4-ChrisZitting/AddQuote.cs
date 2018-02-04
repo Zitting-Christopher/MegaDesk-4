@@ -17,28 +17,28 @@ namespace MegaDesk_3_ChrisZitting
         string CustomerName = String.Empty;
         double DeskWidth = 0;
         double DeskDepth = 0;
-        Drawers = int.Parse(dd_aq_drawers.SelectedItem.ToString());
-        Material = dd_aq_surfMat.SelectedItem.ToString();
+        int Drawers = 0;
+        string Material = "";
         int RushOrderDays = 0;
         double DeskQuoteTotal = 0;
 
-        //var dict = new Dictionary<int, bool>();
-        //dict.Add(1, true);
-        //dict.Add(2, false);
+        var dict = new Dictionary<int, bool>();
+        dict.Add(1, true);
+        dict.Add(2, false);
             
-        //List<SurfaceMaterial> sm = new List<SurfaceMaterial(dict.Keys);
-        //foreach(SurfaceMaterial sm in sms)
-        //    {
-        //        Console.WriteLine(sm);
-        //    }
+        List<SurfaceMaterial> sm = new List<SurfaceMaterial(dict.Keys);
+        foreach(SurfaceMaterial sm in sms)
+            {
+                Console.WriteLine(sm);
+            }
 
-        //sm.Add("Laminate");
-        //sm.Add("Oak");
-        //sm.Add("Rosewood");
-        //sm.Add("Veneer");
-        //sm.Add("Pine");
+    sm.Add("Laminate");
+        sm.Add("Oak");
+        sm.Add("Rosewood");
+        sm.Add("Veneer");
+        sm.Add("Pine");
 
-        //dd_aq_surfMat.DataSource = SurfaceMaterial;
+        dd_aq_surfMat.DataSource = SurfaceMaterial;
 
         public AddQuote()
         {
@@ -134,8 +134,8 @@ namespace MegaDesk_3_ChrisZitting
                 var record = CustomerName + ", " +  DateTime.Now.Date + ", " + DeskWidth + ", " + DeskDepth + ", " + Drawers + ", " + Material + ", " + RushOrderDays + ", " + DeskQuoteTotal;
 
 
-                List<Quotes> deskQuotes = new List<Orders>();
-                deskOrders.Add(newQuote);
+                //List<Quotes> deskQuotes = new List<Orders>();
+                //deskOrders.Add(newQuote);
 
                 //File parameters
                 string outputFile = @"quotes.txt";
